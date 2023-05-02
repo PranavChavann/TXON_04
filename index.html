@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peorsonal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5e2cc6419c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Pranav-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electronics and Telecommunication Student</p>
+                <h1>Hi, I'm <span>Pranav Chavan</span><br>From Punes</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="containter">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg">
+                </div>
+<!--- ---------------About--------------- --->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>An enthusiastic fresher with highly motivated and leadership skills having bechelors of engineering degree in Computer Science.
+                        Seeking a challenging position in a repulated organisation to extend and utilize my learning 
+                        ,skills and knowledge. Possess excellent communication. Flexiable to work in any envionment as required.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>Java<br>c<br>c++</li>
+                            <li><span>Technologyies:</span><br>HTML<br>CSS<br>JavaScript</li>
+                            <li><span>web Development</span><br> web app Development</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>TXON | INTERN(JAN'23-FAB'23)</span><br>Web Development and Design </li>
+                            <li><span>OASIS INFOBYTE | INTERN</span><br> Java Programming</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
